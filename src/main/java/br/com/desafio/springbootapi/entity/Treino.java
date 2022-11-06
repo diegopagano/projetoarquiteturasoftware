@@ -12,12 +12,19 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "treino")
 public class Treino implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer idTreino;
+	
 	private Integer idProfessor;
+	
 	private String horarrio;
+	
 	private Date data;
+	
 	private String descricao;
 
 	public Integer getIdTreino() {
