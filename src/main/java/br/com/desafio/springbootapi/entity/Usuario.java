@@ -22,6 +22,8 @@ public class Usuario implements Serializable {
 	
 	private Long cpf;
 
+	private String senha;
+	
 	public Integer getIdUsuario() {
 		return idUsuario;
 	}
@@ -44,6 +46,14 @@ public class Usuario implements Serializable {
 
 	public void setCpf(Long cpf) {
 		this.cpf = cpf;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 	
 }
